@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            /* border: 2px solid black; */
+            width: 150px;
+            text-align: center;
+            position: relative;
+        }
+    h1:after{
+content: '';
+background-color: red;
+position: absolute;
+top: 110%;
+left: 0;
+height: 10%;
+width: 0%;
+transition: all 0.3s linear;
+    }
+    h1:hover::after{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    
+    <h1>Products</h1>
+
+
+</body>
+</html>

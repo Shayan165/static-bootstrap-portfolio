@@ -1,0 +1,113 @@
+@media (max-width: 991px) {
+  section {
+    padding: 30px 0;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  /* navbar */
+
+  .header-scrolled {
+    height: auto;
+  }
+  .header_wrapper .menu-navbar-nav {
+    text-align: center;
+    background-color: var(--bg-dark-blue);
+    padding-bottom: 15px;
+  }
+  .header_wrapper .nav-item > .nav-link {
+    margin: 0 auto;
+    width: 20%;
+    padding-bottom: 10px;
+  }
+
+  /* portfoluio */
+  #portfolio .cards .card {
+    margin: 10px 45px;
+    width: 80%;
+  }
+  #portfolio .cards .card .content {
+    width: 100%;
+  }
+  #portfolio .cards .card .content > button {
+    position: relative;
+    top: 50%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_wrapper .tab-pane {
+    width: 60%;
+    margin: auto;
+  }
+
+  .about_wrapper .nav {
+    width: 70%;
+    margin: auto;
+  }
+
+  #portfolio .row {
+    margin-left: 30px;
+  }
+
+  #portfolio .cards .card .content > button {
+    position: relative;
+    top: 45%;
+    left: 30%;
+  }
+  #portfolio .cards .card {
+    width: 82%;
+    height: 450px;
+    margin: 40px;
+  }
+
+  .contact-wrapper {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .about_wrapper .tab-pane table {
+    font-size: 10px;
+    margin-left: -7px;
+  }
+
+  .about_wrapper ul li button {
+    text-align: center;
+  }
+
+  .about_wrapper ul li .nav-link {
+    width: 135px;
+  }
+
+  .about_wrapper ul.nav-pills {
+    padding: 20px 60px;
+    font-size: 20px;
+  }
+
+  #portfolio .row {
+    margin-left: -6px;
+  }
+
+  #portfolio .cards .card .content > button {
+    top: 45%;
+    left: 9%;
+  }
+
+  .contact-wrapper {
+    width: 85%;
+  }
+  .contact-btn {
+    margin-top: 68px;
+    margin-bottom: -18px;
+  }
+
+  footer .copyright {
+    margin-top: -36px;
+    width: 367px;
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- cdn font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+    <!-- nav -->
+
+    <header class="header_wrapper fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/logo.png" alt="" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars-staggered toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav menu-navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li> -->
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">PortFolio</a>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0">
+                <a href="#contact" class="main-btn">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner -->
+
+    <section id="home" class="banner_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-md-start">
+            <h6>Welcome to my Profile</h6>
+            <h1>
+              Hi I am Robin <br />
+              <span class="example-selector"></span> <br />
+              based in India
+            </h1>
+            <div class="mt-4">
+              <a class="main-btn" href="https://www.canva.com/design/DAFxakIp3CM/AuK3hEahm3dIegBy7rUAhw/view?utm_content=DAFxakIp3CM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0 about-img">
+            <img src="./images/about.jpg" alt="" class="img-fluid rounded-4 about-img" />
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+            <div class="my-3 my-lg-0 about-content">
+              <span class="subtitle">About Details</span>
+              <h2>About Myself</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                culpa eveniet ut quisquam ipsam suscipit. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Perferendis, distinctio ipsum
+                exercitationem accusantium repudiandae expedita.
+              </p>
+            </div>
+            <div class="pt-4">
+              <ul class="nav nav-pills mb-3 justify-content-between " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="true"
+                  >
+                    My Skills
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-certificates-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-certificates"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-certificates"
+                    aria-selected="false"
+                  >
+                    Certificates
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-experience-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-experience"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-experience"
+                    aria-selected="false"
+                  >
+                    Experience
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-education-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-education"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-education"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="single-progress mb-sm-3 mb-lg-4">
+                    <h6>Desigining</h6>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="single-progress mb-sm-3 mb-lg-4">
+                    <h6>Coding</h6>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                  </div>
+                  <div class="single-progress mb-sm-3 mb-lg-4">
+                    <h6>Marketing</h6>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div class="single-progress mb-sm-3 mb-lg-4">
+                    <h6>Management</h6>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 65%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-certificates"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <table  class="table table-warning">
+                    <thead>
+                      <tr>
+                        <th scope="col ">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Event</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Ui/UX Desiger</td>
+                        <td>2nd</td>
+                        <td>Designer BootCamp 2022</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Backend</td>
+                        <td>1st</td>
+                        <td>Udemy HactoberFest 2023</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>100m Dash</td>
+                        <td>1st</td>
+                        <td>22nd Escobar Runners Championship 2005</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-experience"
+                  role="tabpanel"
+                  aria-labelledby="pills-experience-tab"
+                  tabindex="0"
+                >
+                  <ul class="text-start ps-2">
+                    <li>
+                      <a href="#">
+                        Sr Front End Engineer <span>- Google</span>
+                      </a>
+                     <br> -2018-Present
+                    </li>
+                    <li>
+                      <a href="#">
+                        Sr Front End Engineer <span>- Google</span>
+                      </a>
+                      <br>-2016 to 2018
+                    </li>
+                    <li>
+                      <a href="#"> Front End Engineer <span>-BnB</span> </a>
+                      <br> -2014 to 2016
+                    </li>
+                    <li>
+                      <a href="#"> Software Engineer <span>-AkiBabba</span> </a>
+                      <br> -2013 to 2014
+                    </li>
+                  </ul>
+                </div>
+          
+                 <div class="tab-pane fade"
+                id="pills-education"
+                role="tabpanel"
+                aria-labelledby="pills-education-tab"
+                tabindex="0">
+               
+                <section class="py-5">
+                  <ul class="timeline">
+                    <li class="timeline-item mb-5">
+                      <h5 class="fw-bold">Degree: Bachelor of Science in Computer Science</h5>
+                      <p class="text-body-secondary mb-2 fw-bold">Institution: University of ABC</p>
+                      <p class="text-body-secondary">
+                        Date of Graduation: May 2015
+                      </p>
+                    </li>
+                
+                    <li class="timeline-item mb-5">
+                      <h5 class="fw-bold">Degree: Master of Business Administration (MBA)</h5>
+                      <p class="text-body-secondary mb-2 fw-bold">Institution: Business School XYZ</p>
+                      <p class="text-body-secondary">
+                        Date of Graduation: December 2018
+                      </p>
+                    </li>
+                
+                    <li class="timeline-item mb-5">
+                      <h5 class="fw-bold">Degree: Diploma in Graphic Design</h5>
+                      <p class="text-body-secondary mb-2 fw-bold">Institution: Creative Design Institute</p>
+                      <p class="text-body-secondary">
+                        Date of Graduation: August 2020
+                      </p>
+                    </li>
+                
+                    <li class="timeline-item mb-5">
+                      <h5 class="fw-bold">Degree: High School Diploma</h5>
+                      <p class="text-body-secondary mb-2 fw-bold">Institution: XYZ High School</p>
+                      <p class="text-body-secondary">
+                        Date of Graduation: June 2012
+                      </p>
+                    </li>
+                  </ul>
+                </section> 
+                
+                
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- portfolio section -->
+
+<section id="portfolio">
+  <h2 class="text-center mt-5 text-bg-light bg-opacity-10
+  ">PortFOLIO</h2>
+
+<div class="row cards">
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-4  card">
+    <div class="content">
+      <button type="button" class="btn btn-lg btn-danger" data-bs-placement="top" data-bs-toggle="popover" data-bs-title="Festiva LIve " data-bs-content="Here we have build a responsive Music Concert Website.">Click to toggle popover</button>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- contact section -->
+<section id="contact">
+  <h2 class="text-center text-bg-light mt-5 bg-opacity-10"> Question's ? Let's talk</h2>
+  <form class="row g-3 mb-5 contact-wrapper"  action="https://formsubmit.co/shayanbhatkal786@gmail.com" method="POST" novalidate>
+    <div class="col-md-6">    
+      <input type="text" class="form-control" id="inputName" name="Name" placeholder="Full name" >
+    </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="Email address" >
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control" name="Company" placeholder="Company (Optional)" >
+    </div>
+    <div class="col-12">
+      <textarea class="form-control" id="inputMessage"  id="exampleFormControlTextarea1" rows="3" name="Message" placeholder="Message"></textarea>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Validation Error!!!</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="validationMessage"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn contact-btn" id="submit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Send message</button>
+  </form>
+  
+</section>    
+
+<!-- footer section -->
+<footer>
+<div class="footer-logo">
+  <div class="d-flex justify-content-between align-items-center py-2 ms-auto me-auto container">
+    <div class="main-logo"><img src="./images/logo.png" alt=""></div>
+    <div class="social-icons">
+   <a href="https://twitter.com/Google?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter px-2"></i></a>   
+   <a href="https://in.linkedin.com/company/google" target="_blank"><i class="fa-brands fa-linkedin px-2"></i></a>   
+    <a href="https://github.com/google" target="_blank"><i class="fa-brands fa-github px-2"></i></a>  
+    <a href="https://in.pinterest.com/" target="_blank"><i class="fa-brands fa-square-pinterest px-2"></i></a>  
+    </div>
+  </div>
+</div>
+<div class="footer-links">
+  <div class="row pt-5 pb-5 ms-auto me-auto container "> 
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <span class="fs-4">Links</span>
+  <ul class="d-flex ms-auto list-unstyled py-2 ">
+  <li class="nav-item">
+  <a href="#home" class="nav-link ">Home</a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">About</a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">Portfolio</a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">Contact</a>
+</li>
+</ul>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <span class="fs-4">Have a question?</span>
+  <p class="pt-2">090-080-0760
+  <br> hello@portfolio.com</p>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-4">
+  <span class="fs-4">Location</span>
+  <p class="pt-2">11th and 12th Floor Carina East Tower Bagmane Constellation Business Park IN-BLR-BCPC,<br>Ferns City, Doddanekkundi, Bengaluru, Karnataka 560037
+  </p>
+    <a target="_blank" href="https://www.google.com/maps/dir/11.0456616,75.9579352/rmz+infinity/@12.0165608,75.4895093,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae113618c9a9f7:0x43e9edd573db8110!2m2!1d77.6607097!2d12.9938286?entry=ttu" class="nav-link fs-4 map-link">Our Map <i class="fa-solid fa-angle-right fs-4"></i></a>
+
+</div>
+</div>
+<ul class="d-flex ms-auto list-unstyled pb-2 mb-0 container copyright">
+  <li class="nav-item">
+  <a href="#home" class="nav-link ">Copyright &copy; 2045 </a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">Terms & Conditions</a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">Privacy Policy</a>
+</li>
+<li class="nav-item ps-3
+ ">
+  <a href="#about" class="nav-link">Your Feedback</a>
+</li>
+</ul>
+</div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./autotyping.min.js"></script>
+    <script>
+      const exampleText = ['Front-End Developer', 'Web Developer', 'Ui/Ux Designer', 'Full-Stack Developer'];
+      const exampleTyping = new AutoTyping('.example-selector', exampleText, {
+          typeSpeed: 50,
+          deleteSpeed: 50,
+          waitBeforeDelete: 2000,
+          waitBetweenWords: 500,
+      });
+      exampleTyping.start()
+  </script>
+    <script src="./scr.js"></script>
+    
+  </body>
+</html>
