@@ -363,20 +363,21 @@
 <!-- contact section -->
 <section id="contact">
   <h2 class="text-center text-bg-light mt-5 bg-opacity-10"> Question's ? Let's talk</h2>
-  <form class="row g-3 mb-5 contact-wrapper"  action="https://formsubmit.co/shayanbhatkal786@gmail.com" method="POST" novalidate>
+  <form class="row g-3 mb-5 contact-wrapper"  action="https://formsubmit.co/shayanbhatkal786@gmail.com" method="POST" validate>
     <div class="col-md-6">    
-      <input type="text" class="form-control" id="inputName" name="Name" placeholder="Full name" >
+      <input type="text" class="form-control required" onkeyup="enableSubmit()" id="inputName" name="Name" placeholder="Full name" >
     </div>
     <div class="col-md-6">
-      <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="Email address" >
+      <input type="email" class="form-control required" onkeyup="enableSubmit()" id="inputEmail" name="Email" placeholder="Email address" >
     </div>
     <div class="col-12">
       <input type="text" class="form-control" name="Company" placeholder="Company (Optional)" >
     </div>
     <div class="col-12">
-      <textarea class="form-control" id="inputMessage"  id="exampleFormControlTextarea1" rows="3" name="Message" placeholder="Message"></textarea>
+      <textarea class="form-control required" onkeyup="enableSubmit()" id="inputMessage"  id="exampleFormControlTextarea1" rows="3" name="Message" placeholder="Message"></textarea>
     </div>
-
+    <input type="hidden" name="_captcha" value="false">
+ <!-- Modal to popup upon valid error and for success messagr-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -394,7 +395,7 @@
       </div>
     </div>
 
-    <button type="submit" class="btn contact-btn" id="submit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Send message</button>
+    <button type="submit" class="btn contact-btn" id="submit-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>Send message</button>
   </form>
   
 </section>    
