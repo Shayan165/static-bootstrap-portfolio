@@ -71,6 +71,9 @@
   }
 }
 @media (max-width: 576px) {
+  .header_wrapper .nav-item > .nav-link {
+    width: 35%;
+  }
   .about_wrapper .tab-pane table {
     font-size: 10px;
     margin-left: -7px;
